@@ -12,7 +12,8 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing build stuff.."
+                javac MyClass.java
+                java MyClass
                 '''
             }
         }
